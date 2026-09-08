@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyboard Events</title>
+    <style>
+        body{
+            font-family :'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            background-color : #f0f0f0;
+            background-size : auto;
+        }
+        #form{
+            height : 900px;
+            width : 800px;
+            background-color : #3d6b03;
+            margin : 200px 0 0 200px;
+            border : 5px solid black;
+            border-radius : 50px;
+            background : #b3f069;
+        }
+        input{
+            height : 30px;
+            width : 350px;
+            border : 3px solid #3d6b03;
+            border-radius : 50px;
+            display : flex;
+            margin : 20px 0 0 0;
+            box-shadow : inset 1px 2px 10px #090f03;
+        }
+        p{
+            font-size : 30px;
+            font-weight : bold;
+        }
+        h1{
+            font-size : 50px;
+            font-weight : bold;
+        }
+       
+    </style>
+    <script>
+        function keydown() {
+            document.getElementById("form").style.backgroundColor = "yellow";
+        }
+        function keyup() {
+            document.getElementById("form").style.backgroundColor = "red";
+        }
+        function keypress() {
+            document.getElementById("form").style.backgroundColor = "blue";
+        }
+        
+    </script>
+</head>
+<body>
+    <div id = "form">
+        <center><h1 id = "h1">Keyboard Events</h1>
+
+        <br>
+
+        <p>onkeydown</p>
+        <input type = "text" onkeydown="keydown()">
+        
+        <p>onkeyup</p>
+        <input type = "text" onkeyup="keyup()">
+        
+        <p>onkeypress</p>
+        <input type = "text"onkeypress="keypress()"></center>
+    </div>
+</body>
+</html>

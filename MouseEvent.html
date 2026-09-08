@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouse Events</title>
+    <style>
+        #box{
+            height : 100px;
+            width : 100px;
+            background-color : blue;
+            margin : 100px 0 0 100px;
+            border : 5px solid black;
+            border-radius : 5px;
+        }
+    </style>
+    <script>
+        function eventclick() {
+            alert("Clicked");
+        }
+        function eventover() {
+            alert("Overed");
+        }
+        function eventdbl() {
+            alert("Double Clicked");
+        }
+        function eventup() {
+            alert("Mouse Up");
+        }
+        
+    </script>
+</head>
+<body>
+    <div id = "box" onclick = "eventclick() ">This is Section A</div>
+    <div id = "box" onmouseover = "eventover()">This is Section A</div>
+    <div id = "box" ondblclick = "eventdbl() ">This is Section A</div>
+    <div id = "box" onmouseup = "eventup()">This is Section A</div>
+    <div id = "form">
+       
+    </div>
+</body>
+</html>
