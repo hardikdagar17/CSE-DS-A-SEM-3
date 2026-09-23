@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Activity Monitoring System</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="box">
+
+        <h1>Student Application</h1>
+
+        <button onclick="login()">Login</button>
+        <button onclick="assignment()">Assignment</button>
+        <button onclick="logout()">Logout</button>
+        <button onclick="exitApp()">Exit</button>
+
+        <div id="output"></div>
+        
+    </div>
+
+    <script>
+
+        function login() {
+            document.getElementById("output").innerHTML =
+                "Student logged successfully";
+        }
+
+        function assignment() {
+            document.getElementById("output").innerHTML =
+                "Assignment submitted";
+        }
+
+        function logout() {
+            document.getElementById("output").innerHTML =
+                "Student logged out";
+        }
+
+        function exitApp() {
+            document.getElementById("output").innerHTML =
+                "Exiting application";
+        }
+
+    </script>
+</body>
+</html>
